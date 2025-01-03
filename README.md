@@ -17,11 +17,11 @@ See section [Important Notes](#important-notes) for details.
 **The version of the project currently committed is in pre-release**, meaning it currently lacks several key features.
 
 - At this time, only single-character arguments are supported, and assumes the current system (OS, hardware, etc.) uses ASCII encoding.
-- Can be used alongside other command-argument libraries - simply defer to this library when dealing with single characers.
+- Can be used alongside other command-argument libraries - simply defer to this library when dealing with single characters.
 
 Features that have not yet been committed include support for string and number arguments, special handling for non-ASCII systems, and an optional wrapper class to intake all of these simultaneously.
 
-Please note that documentation, usage, examples, and sampel are currently not complete.
+Please note that documentation, usage, examples, and samples are currently not complete.
 
 ## Installation
 
@@ -45,7 +45,7 @@ For example, command-line program that expects inputs like this:
 Register them via the `registerConfigItem` function of `CmdArgMgr_Char`:
 
 - Expects both the set of possible arguments and the `CmdArgMgr_Char` object to be `constexpr`. This enables the determination as to what command(s) are valid to be made at compile-time.
-- Use ths static function `CmdArgMgr_Char::argToId` to convert a character to a format understood by the argument manager.
+- Use the static function `CmdArgMgr_Char::argToId` to convert a character to a format understood by the argument manager.
 
 In all, the insertion of a command represented by the letter `u` may look like the following:
 ```cpp
